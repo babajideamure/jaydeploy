@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | AWS Cloud Startup</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        .faq-item {
+            background-color: #333;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            color: #ffcc00;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            color: #ddd;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <h3>How long does AWS migration take?</h3>
+            <p class="faq-answer">It depends on the complexity, but most projects take 2-4 weeks.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do you offer free consultations?</h3>
+            <p class="faq-answer">Yes! Book a 30-minute session to discuss your AWS needs.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What services do you provide for AWS startups?</h3>
+            <p class="faq-answer">We offer cloud architecture, security, cost optimization, and DevOps support.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is AWS more cost-effective than traditional hosting?</h3>
+            <p class="faq-answer">Yes, AWS offers a pay-as-you-go model, reducing upfront costs and scaling as needed.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do you ensure security during migration?</h3>
+            <p class="faq-answer">We follow best practices like encryption, IAM roles, and continuous monitoring.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 AWS Cloud Startup. All rights reserved.
+    </footer>
+
+    <script>
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
