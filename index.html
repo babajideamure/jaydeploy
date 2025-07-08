@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JayDeploy — Seamless Deployment, Endless Possibilities | AWS Cloud Consulting Abuja</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="JayDeploy - Expert AWS cloud consulting in Abuja, Nigeria. We help businesses migrate, build, secure, and scale in the cloud with confidence. Cloud migration, DevOps, SaaS development.">
+  <meta name="keywords" content="AWS consulting Abuja, cloud migration Nigeria, DevOps Maitama, SaaS development FCT, cloud training Abuja, AWS expert Nigeria">
+  <meta name="author" content="JayDeploy">
+  <meta name="geo.region" content="NG-FC">
+  <meta name="geo.placename" content="Abuja, FCT, Nigeria">
+  <meta name="geo.position" content="9.0579;7.4951">
+  <meta name="ICBM" content="9.0579, 7.4951">
+  
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="JayDeploy — Seamless Deployment, Endless Possibilities">
+  <meta property="og:description" content="Helping businesses migrate, build, secure, and scale in the cloud with confidence and expertise. Based in Abuja, Nigeria.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_NG">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D5PKCFDSDF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D5PKCFDSDF');
+</script>
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JayDeploy",
+    "description": "AWS cloud consulting and SaaS development company",
+    "url": "https://jaydeploy.com",
+    "logo": "https://jaydeploy.com/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Abuja",
+      "addressRegion": "FCT",
+      "addressCountry": "Nigeria"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+234-909-700-9700",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://x.com/JayDeploy",
+      "https://linkedin.com/company/jaydeploy",
+      "https://youtube.com/@JayDeploy"
+    ]
+  }
+  </script>
+  
+<style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body { 
+     font-family: 'Poppins', sans-serif;
+      background: #0f0f0f; 
+      color: #f6f6f6; 
+      line-height: 1.6; 
+    }
+    
+    header, section, footer { 
+      padding: 60px 20px; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+    }
+    
+    .section-container {
+      background: #1a1a1a;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid #333;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .section-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #f6c90e, transparent);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+    
+    .hero-container {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border-radius: 20px;
+      padding: 60px 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+      border: 1px solid #444;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-container::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(246, 201, 14, 0.1) 0%, transparent 70%);
+      animation: pulse 4s ease-in-out infinite;
+    }
+    
+    h1, h2 { 
+      font-weight: 800; 
+      color: #f6c90e; 
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.1; transform: scale(1.1); }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .hero { 
+      text-align: center; 
+      padding-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero img {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .hero h1 { 
+      font-size: 2.8rem; 
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+    
+    .hero .tagline {
+      font-size: 1.1rem;
+      color: #f6c90e;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .hero p { 
+      font-size: 1.2rem; 
+      margin-bottom: 30px; 
+      color: #ccc; 
+    }
+    
+    .hero .cta-buttons { 
+      display: flex; 
+      gap: 15px; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+    }
+    
+    .hero .cta-buttons a, 
+    .hero .cta-buttons button { 
+      background: #f6c90e; 
+      color: #000; 
+      padding: 12px 30px; 
+      border: none; 
+      border-radius: 8px; 
+      font-weight: 600; 
+      text-decoration: none; 
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px; 
+      cursor: pointer; 
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    
+    .hero .cta-buttons a:hover,
+    .hero .cta-buttons button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(246, 201, 14, 0.3);
+    }
+    
+    .hero .cta-buttons a img { 
+      height: 20px; 
+    }
+    
+    .services, .clients, .contact, .team, .portfolio, .blog { 
+      margin-top: 80px; 
+    }
+    
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 30px; 
+      margin-top: 30px; 
+    }
+    
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card { 
+      background: #1a1a1a; 
+      padding: 20px; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(246, 201, 14, 0.1);
+    }
+    
+    .card h3 { 
+      margin-bottom: 10px; 
+      color: #f6c90e; 
+    }
+    
+    .card p { 
+      color: #ddd; 
+    }
+    
+    .client-card {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border: 1px solid #333;
+    }
+    
+    .client-card .client-name {
+      font-weight: 600;
+      color: #f6c90e;
+      margin-bottom: 5px;
+    }
+    
+    .client-card .client-role {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+    
+    /* Consolidated client logo placeholder styles */
+    .client-logo-placeholder {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      border: 2px dashed #333;
+    }
+    
+    /* Consolidated logo box styles */
+    .logo-box {
+      width: 120px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      background: transparent !important;
+      padding: 0;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .logo-box:hover {
+      transform: translateX(8px) scale(1.05);
+    }
+    
+    .logo-box img {
+      width: 110px;
+      height: auto;
+      max-height: 70px;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+      filter: grayscale(0.3);
+    }
+    
+    .logo-box img:hover {
+      filter: grayscale(0);
+    }
+    
+    .blog-preview {
+      margin-top: 30px;
+    }
+    
+    .blog-card {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border: 1px solid #333;
+      padding: 25px;
+    }
+    
+    .blog-card .blog-date {
+      color: #f6c90e;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    
+    .blog-card h4 {
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    
+    .blog-card .blog-excerpt {
+      color: #ddd;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    
+    .blog-card a {
+      color: #f6c90e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .blog-card a:hover {
+      text-decoration: underline;
+    }
+    
+    form { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 15px; 
+      margin-top: 30px; 
+    }
+    
+    input, textarea { 
+      padding: 12px; 
+      border: 1px solid #444; 
+      background: #1a1a1a; 
+      color: #f6f6f6; 
+      border-radius: 8px; 
+      font-size: 1rem; 
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #f6c90e;
+    }
+    
+    button.submit-btn { 
+      width: fit-content; 
+      background: #f6c90e; 
+      color: #000; 
+      border: none; 
+      padding: 12px 25px; 
+      border-radius: 8px; 
+      font-weight: 600; 
+      cursor: pointer; 
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    button.submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(246, 201, 14, 0.3);
+    }
+    
+    footer { 
+      text-align: center; 
+      font-size: 0.9rem; 
+      color: #888; 
+      padding-bottom: 40px; 
+    }
+    
+    .footer-container {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid #333;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .footer-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #f6c90e, transparent);
+    }
+    
+    .socials { 
+      margin-bottom: 20px; 
+    }
+    
+    .socials a { 
+      margin: 0 15px; 
+      color: #f6c90e; 
+      text-decoration: none; 
+      font-weight: 600; 
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+    
+    .socials a:hover {
+      color: #fff;
+      transform: translateY(-3px) scale(1.1);
+      text-shadow: 0 4px 8px rgba(246, 201, 14, 0.5);
+    }
+    
+    .team p {
+      color: #ddd;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+    
+    .founder-info {
+      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+      border-radius: 12px;
+      padding: 25px;
+      margin-top: 25px;
+      border: 1px solid #444;
+    }
+    
+    .founder-info h4 {
+      color: #f6c90e;
+      margin-bottom: 10px;
+    }
+    
+    .founder-info p {
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+    
+    .certification-badge {
+      display: inline-block;
+      background: rgba(246, 201, 14, 0.1);
+      color: #f6c90e;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(246, 201, 14, 0.3);
+    }
+    
+    .form-message {
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: none;
+    }
+    
+    .form-message.success {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid #22c55e;
+      color: #22c55e;
+    }
+    
+    .form-message.error {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid #ef4444;
+      color: #ef4444;
+    }
+    
+    .calendly-inline-widget {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* Add container constraints and padding */
+.section-container,
+.hero-container,
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .section-container,
+  .hero-container,
+  .footer-container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container,
+  .footer-container,
+  .hero-container {
+    padding: 0 60px;
+  }
+}
+
+/* Add vertical spacing between containers */
+.hero-container,
+.section-container,
+.footer-container {
+  margin-bottom: 60px; /* Adjust this value as needed */
+}
+
+/* Remove bottom margin from the last container */
+.footer-container {
+  margin-bottom: 0;
+}
+
+/* Optional: Add top margin to create space from page top */
+.hero-container {
+  margin-top: 40px;
+}
+
+/* Enhanced visual styling for sections */
+.section-container section,
+.hero-container section,
+.footer-container section {
+  background: rgba(42, 42, 42, 0.8);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove bottom margin from sections in footer */
+.footer-container section:last-child {
+  margin-bottom: 0;
+}
+
+    
+    
+    /* Performance optimizations */
+    img {
+      loading: lazy;
+      decoding: async;
+    }
+    
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .grid, .grid-3 { 
+        grid-template-columns: 1fr; 
+      }
+      
+      .hero h1 { 
+        font-size: 2.2rem; 
+      }
+      
+      .hero p { 
+        font-size: 1rem; 
+      }
+      
+      .cta-buttons { 
+        flex-direction: column; 
+        align-items: center; 
+      }
+      
+      .hero .cta-buttons a,
+      .hero .cta-buttons button {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+      
+      .client-logo-placeholder {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-container">
+    <header class="hero">
+      <img src="/logo.png" alt="JayDeploy Logo - AWS Cloud Consulting Abuja" style="height: 60px; margin-bottom: 20px;" loading="eager">
+      <div class="tagline">Seamless Deployment, Endless Possibilities</div>
+      <h1>Build. Secure. Scale.</h1>
+      <p>Helping businesses migrate, build, secure, and scale in the cloud with confidence and expertise.</p>
+      <div class="cta-buttons">
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}); gtag('event', 'cta_click', {'event_category': 'engagement', 'event_label': 'get_in_touch'});">Get in Touch</button>
+        <a href="https://wa.me/2349097009700" target="_blank" aria-label="Chat with us on WhatsApp" onclick="gtag('event', 'whatsapp_click', {'event_category': 'engagement', 'event_label': 'whatsapp'});">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <div class="section-container">
+    <section class="services">
+      <h2>What We Do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>☁️ Cloud Consulting</h3>
+          <p>Architecture reviews, migration strategy, cost optimization, and cloud security for businesses across Africa.</p>
+        </div>
+        <div class="card">
+          <h3>🎓 AWS Training</h3>
+          <p>Hands-on AWS courses, certification prep, and real-world cloud labs to build your team's cloud expertise.</p>
+        </div>
+        <div class="card">
+          <h3>🛠️ IT Services</h3>
+          <p>DevOps implementation, infrastructure setup, 24/7 support and managed cloud services.</p>
+        </div>
+        <div class="card">
+          <h3>💡 SaaS Solutions</h3>
+          <p>We build scalable, cloud-native SaaS platforms tailored for your business needs and growth.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="section-container">
+    <section class="portfolio">
+      <h2>Our Portfolio</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>🏫 Educational Institution Website</h3>
+          <p><strong>Challenge:</strong> School needed modern web presence<br>
+          <strong>Solution:</strong> Built responsive, fast-loading website<br>
+          <strong>Result:</strong> 50% increase in online inquiries</p>
+        </div>
+        <div class="card">
+          <h3>🏋️ Fitness Center Platform</h3>
+          <p><strong>Challenge:</strong> Gym needed member management system<br>
+          <strong>Solution:</strong> Custom web platform with booking system<br>
+          <strong>Result:</strong> 40% improvement in member engagement</p>
+        </div>
+        <div class="card">
+          <h3>🌐 JayDeploy Corporate Site</h3>
+          <p><strong>Challenge:</strong> Establish professional online presence<br>
+          <strong>Solution:</strong> Modern, cloud-hosted corporate website<br>
+          <strong>Result:</strong> Enhanced credibility and lead generation</p>
+        </div>
+      </div>
+      
+     <div class="client-logo-placeholder">
+  <div class="logo-box">
+    <img src="Giant Stride.png" alt="Giant Stride Logo" />
+  </div>
+  <div class="logo-box">
+    <img src="jojo gym.png" alt="Jojo Gym Logo" />
+  </div>
+  <div class="logo-box">
+    <img src="logo.png" alt="JayDeploy Logo" />
+  </div>
+</div>
+
+    </section>
+  </div>
+
+  <div class="section-container">
+    <section class="clients">
+      <h2>What Our Clients Say</h2>
+      <div class="grid">
+        <div class="card client-card">
+          <div class="client-name">Issa Moses</div>
+          <div class="client-role">School Administrator</div>
+          <p>"JayDeploy brought our vision to life with incredible speed and clarity. The website not only looks professional but has significantly improved our parent engagement and enrollment inquiries."</p>
+        </div>
+        <div class="card client-card">
+          <div class="client-name">Coach Jojo</div>
+          <div class="client-role">Owner, Jojo Body Works</div>
+          <p>"Professional and responsive throughout the entire process. Our new website has become a powerful lead magnet, helping us attract and convert more fitness enthusiasts into committed members."</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="section-container">
+    <section class="blog">
+      <h2>Latest Insights</h2>
+      <p>Stay updated with the latest cloud trends, AWS tips, and digital transformation strategies.</p>
+      
+      <div class="blog-preview">
+        <div class="grid">
+          <div class="blog-card card">
+            <div class="blog-date"></div>
+            <h4>Demystifying Amazon Web Services</h4>
+            <p class="blog-excerpt">Why the Cloud Isn't Just for Big Tech Anymore</p>
+            <a href="https://www.linkedin.com/pulse/demystifying-amazon-web-services-why-cloud-isnt-just-big-amure-9vxwf/?trackingId=CTBWngoTYbqrsC1493J6BA%3D%3D" target="_blank"  onclick="gtag('event', 'blog_interest', {'event_category': 'content', 'event_label': 'aws_services'});">Read More →</a>
+          </div>
+          <div class="blog-card card">
+            <div class="blog-date"></div>
+            <h4>AWS VPC & CIDR</h4>
+            <p class="blog-excerpt">No Be Big Grammar, Just Vibes!</p>
+            <a href="https://www.linkedin.com/pulse/aws-vpc-cidr-big-grammar-just-vibes-jaydeploy-lxjzf" target="_blank" onclick="gtag('event', 'blog_interest', {'event_category': 'content', 'event_label': 'cloud_security'});">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="section-container">
+    <section class="contact" id="contact">
+      <h2>Let's Work Together</h2>
+      <p>Ready to transform your business with cloud technology? Let's discuss your project and explore how we can help you achieve your goals.</p>
+      
+      <!-- Direct Contact Options -->
+      <div style="background: #2a2a2a; border-radius: 12px; padding: 40px; margin: 30px 0; text-align: center;">
+        <h3 style="color: #f6c90e; margin-bottom: 20px;">📞 Get in Touch Instantly</h3>
+        <p style="color: #ddd; margin-bottom: 30px;">Choose your preferred way to connect with us for a free consultation</p>
+        
+        <!-- Contact Options Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px;">
+          
+          <!-- WhatsApp Option -->
+          <div style="background: #1a1a1a; border-radius: 12px; padding: 25px; border: 2px solid #25D366;">
+            <div style="color: #25D366; font-size: 2rem; margin-bottom: 15px;">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h4 style="color: #fff; margin-bottom: 10px;">WhatsApp Chat</h4>
+            <p style="color: #ccc; font-size: 0.9rem; margin-bottom: 20px;">Quick response • Available 9AM-6PM WAT</p>
+            <button style="background: #25D366; color: #fff; padding: 12px 30px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%;" onclick="window.open('https://wa.me/2349097009700?text=Hi%20JayDeploy!%20I%27m%20interested%20in%20your%20cloud%20consulting%20services.%20I%27d%20like%20to%20schedule%20a%20free%20consultation%20to%20discuss%20my%20project%20needs.', '_blank'); gtag('event', 'whatsapp_contact', {'event_category': 'engagement', 'event_label': 'consultation'});">
+              Start WhatsApp Chat
+            </button>
+          </div>
+          
+          <!-- Email Option -->
+          <div style="background: #1a1a1a; border-radius: 12px; padding: 25px; border: 2px solid #f6c90e;">
+            <div style="color: #f6c90e; font-size: 2rem; margin-bottom: 15px;">
+              📧
+            </div>
+            <h4 style="color: #fff; margin-bottom: 10px;">Email Consultation</h4>
+            <p style="color: #ccc; font-size: 0.9rem; margin-bottom: 20px;">Detailed discussion • 24-hour response</p>
+            <button style="background: #f6c90e; color: #000; padding: 12px 30px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%;" onclick="window.open('mailto:info@jaydeploy.com?subject=Free%20Cloud%20Consultation%20Request&body=Hi%20JayDeploy%20Team%2C%0D%0A%0D%0AI%27m%20interested%20in%20your%20cloud%20consulting%20services%20and%20would%20like%20to%20schedule%20a%20free%20consultation.%0D%0A%0D%0ACompany%2FOrganization%3A%20%0D%0A%0D%0AProject%20Type%3A%20%0D%0A%5B%5D%20Cloud%20Migration%0D%0A%5B%5D%20AWS%20Setup%20%26%20Configuration%0D%0A%5B%5D%20Security%20Assessment%0D%0A%5B%5D%20Training%20%26%20Support%0D%0A%5B%5D%20SaaS%20Development%0D%0A%5B%5D%20Other%0D%0A%0D%0AProject%20Details%3A%0D%0A%0D%0A%0D%0APreferred%20Contact%20Method%3A%0D%0A%5B%5D%20Phone%20Call%0D%0A%5B%5D%20Video%20Call%0D%0A%5B%5D%20Email%20Discussion%0D%0A%0D%0APhone%20Number%3A%20%0D%0A%0D%0ATimezone%3A%20%0D%0A%0D%0AThank%20you!', '_blank'); gtag('event', 'email_contact', {'event_category': 'engagement', 'event_label': 'consultation'});">
+              Send Email
+            </button>
+          </div>
+          
+        </div>
+        
+        <!-- Additional Info -->
+        <div style="border-top: 1px solid #444; padding-top: 20px;">
+          <p style="color: #888; font-size: 0.9rem; margin-bottom: 10px;">💼 Free consultation • No commitment required</p>
+          <p style="color: #888; font-size: 0.9rem;">We typically respond within 2 hours during business hours</p>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <div class="footer-container">
+    <footer>
+      <div class="socials">
+        <a href="https://x.com/JayDeploy" target="_blank" aria-label="Follow us on X (Twitter)" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'twitter'});">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com/company/jaydeploy" target="_blank" aria-label="Connect with us on LinkedIn" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'linkedin'});">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://youtube.com/@JayDeploy" target="_blank" aria-label="Subscribe to our YouTube channel" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'youtube'});">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <p>© 2025 JayDeploy</p>
+      <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Maitama, Abuja FCT | AWS Cloud Consulting & SaaS Development</p>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // WhatsApp chat widget
+    function initChatWidget() {
+      const chatButton = document.createElement('div');
+      chatButton.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: #f6c90e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        color: #000;
+        font-size: 24px;
+      `;
+      chatButton.innerHTML = '💬';
+      chatButton.title = 'Chat with us on WhatsApp';
+      
+      chatButton.addEventListener('click', function() {
+        // Track chat widget click
+        gtag('event', 'chat_widget_click', {
+          'event_category': 'engagement',
+          'event_label': 'chat_widget'
+        });
+        
+        window.open('https://wa.me/2349097009700?text=Hi! I found you through your website and would like to know more about your cloud services.', '_blank');
+      });
+      
+      chatButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.1)';
+        this.style.boxShadow = '0 6px 20px rgba(246, 201, 14, 0.4)';
+      });
+      
+      chatButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+      });
+      
+      document.body.appendChild(chatButton);
+    }
+
+    // Error handling for gtag calls
+function safeGtag(event, eventName, parameters) {
+  if (typeof gtag !== 'undefined') {
+    gtag(event, eventName, parameters);
+  }
+}
+    
+    // Initialize chat widget after page load
+    window.addEventListener('load', initChatWidget);
+    
+    // Track page engagement
+    let startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+      const timeSpent = Math.round((Date.now() - startTime) / 1000);
+      gtag('event', 'page_engagement', {
+        'event_category': 'engagement',
+        'event_label': 'time_on_page',
+        'value': timeSpent
+      });
+    });
+    
+    // Track scroll depth
+    let maxScroll = 0;
+    window.addEventListener('scroll', function() {
+      const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      if (scrollPercent > maxScroll) {
+        maxScroll = scrollPercent;
+        if (maxScroll % 25 === 0) { // Track at 25%, 50%, 75%, 100%
+          gtag('event', 'scroll_depth', {
+            'event_category': 'engagement',
+            'event_label': 'scroll_' + maxScroll + '_percent',
+            'value': maxScroll
+          });
+        }
+      }
+    });
+</script>
+</body>
+</html>
